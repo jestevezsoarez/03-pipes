@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
 
-  nombre: string = 'Capitán América';
-  PI    : number = Math.PI;
+  nombre    : string = 'Capitán América';
+  PI        : number = Math.PI;
+  porcentaje: number = 0.234;
 }
