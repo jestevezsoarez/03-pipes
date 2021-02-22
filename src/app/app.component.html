@@ -47,8 +47,27 @@
           <td>percent: '2.2-2'</td>
           <td>{{ porcentaje | percent: '2.2-2' }}</td>   <!-- 2 enteros y 2 decimales -->
         </tr>
+
+        <tr>
+          <td>{{ salario }}</td>
+          <td>salario | currency: 'UYU': 'symbol-narrow': '.0-0'</td>
+          <td>{{ salario | currency: 'UYU': 'symbol-narrow': '.0-0' }}</td>   <!-- 2 enteros y 2 decimales -->
+        </tr>
+
       </tbody>
     </table>
+  </div>
+</div>
+
+
+<h3>JSON</h3>
+<hr>
+<div class="row">
+  <div class="col">
+
+    <pre>
+      {{ heroe | json }}
+    </pre>
   </div>
 </div>
 
