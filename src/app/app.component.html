@@ -54,6 +54,31 @@
           <td>{{ salario | currency: 'UYU': 'symbol-narrow': '.0-0' }}</td>   <!-- 2 enteros y 2 decimales -->
         </tr>
 
+        <tr>
+          <td>{{ valorPromesa }}</td>
+          <td> async </td>
+          <td>{{ valorPromesa | async }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td> date </td>
+          <td>{{ fecha | date }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td> fecha | date:'medium'  </td>
+          <td>{{ fecha | date:'medium' }}</td>
+        </tr>
+
+        <!-- Paso las fechas a español usando LOCALE_ID manualmente -->
+        <tr>
+          <td>{{ fecha }}</td>
+          <td> fecha | date:'medium'  </td>
+          <td>{{ fecha | date:'MMMM - dd' }}</td>
+        </tr>
+
       </tbody>
     </table>
   </div>
