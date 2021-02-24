@@ -68,15 +68,26 @@
 
         <tr>
           <td>{{ fecha }}</td>
-          <td> fecha | date:'medium'  </td>
+          <td> date:'medium'  </td>
           <td>{{ fecha | date:'medium' }}</td>
         </tr>
 
         <!-- Paso las fechas a español usando LOCALE_ID manualmente -->
         <tr>
           <td>{{ fecha }}</td>
-          <td> fecha | date:'medium'  </td>
+          <td> date:'MMMM - dd'  </td>
           <td>{{ fecha | date:'MMMM - dd' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td> date:'MMMM - dd': '': '{{ idioma }}'  
+            <br>
+            <button (click)="idioma = 'es-UY'" class="mr-1 btn btn-primary">Español</button>
+            <button (click)="idioma = 'en'" class="mr-1 btn btn-success">Inglés</button>
+            <button (click)="idioma = 'fr'" class="mr-1 btn btn-secondary">Francés</button>            
+          </td>
+          <td>{{ fecha | date:'MMMM - dd': '': idioma }}</td>
         </tr>
 
       </tbody>
