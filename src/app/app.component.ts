@@ -9,6 +9,7 @@ export class AppComponent {
   
 
   nombre    : string = 'Capitán América';
+  nombre2   : string = 'javIeR eStéVeZ sOareZ';
   PI        : number = Math.PI;
   porcentaje: number = 0.234;
   salario   : number = 1234.5;
