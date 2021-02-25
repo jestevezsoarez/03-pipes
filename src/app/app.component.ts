@@ -8,14 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
 
-  nombre    : string = 'Capitán América';
-  nombre2   : string = 'javIeR eStéVeZ sOareZ';
-  PI        : number = Math.PI;
-  porcentaje: number = 0.234;
-  salario   : number = 1234.5;
-  fecha     : Date = new Date();
+  nombre    : string  = 'Capitán América';
+  nombre2   : string  = 'javIeR eStéVeZ sOareZ';
+  PI        : number  = Math.PI;
+  porcentaje: number  = 0.234;
+  salario   : number  = 1234.5;
+  fecha     : Date    = new Date();
+  activar   : boolean = true;
 
   idioma    : string = 'es-UY';
+  videoUrl  : string = 'https://www.youtube.com/embed/eHtU0-TfDGc';
 
   valorPromesa = new Promise<string>( (resolve) => {
 
